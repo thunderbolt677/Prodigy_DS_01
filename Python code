@@ -1,0 +1,10 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv(r'C:\Users\Viresh\Downloads\API_SP.POP.TOTL_DS2_en_csv_v2_228793.csv')
+plt.figure(figsize=(10, 6))
+plt.hist(df['Total Population'], bins=20, color='skyblue', edgecolor='black')
+plt.title('Histogram of Total Population')
+plt.xlabel('Total Population')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
